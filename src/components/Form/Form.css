@@ -4,6 +4,8 @@
     width: 300px;
     border-left: 2px solid white;
     border-bottom: 1px solid white;
+    box-shadow: 3px 6px 6px 1px black;
+    /* filter: drop-shadow(0px 2px 3px black); */
     color: #eaedf9 !important;
     padding: 2rem;
 }
