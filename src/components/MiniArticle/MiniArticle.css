@@ -11,7 +11,9 @@
     padding: 1rem 0;
 }
 
-.mini-description p {
+
+.mini-description p,
+.mini-date p {
     padding-bottom: 1rem;
     font-size: 1.1rem;
     text-align: justify;

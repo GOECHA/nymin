@@ -9,7 +9,7 @@ import { ProgressSpinner } from '../SpinLogo/SpinLogo';
 
 
 function App() {
-const [articleData, setArticleData] = useState('')
+const [articles, setArticles] = useState([])
 const [data, setData] = useState(null);
 const [loading, setLoading] = useState(true);
 const [error, setError] = useState(null);
@@ -41,7 +41,14 @@ useEffect(() => {
     });
 }, []);
 
+// console.log(`line44`,  getAllData(data))
+// console.log(`line45`,  data)
 
+
+const showArticles = (article)=>{
+  setArticles([...articles, article])
+  console.log(`article`, [article])
+}
 
 
 
@@ -49,7 +56,7 @@ useEffect(() => {
     <main className="app-container">
       {loading && <ProgressSpinner/>}
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home articles={articles} showArticles={showArticles} /> }/>
         <Route path="/selected" element={<SelectedView/>} />
       </Routes>
     </main>
