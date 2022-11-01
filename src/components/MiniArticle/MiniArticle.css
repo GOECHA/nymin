@@ -1,0 +1,18 @@
+.mini-article{
+    display: flex;
+    flex-direction: column;
+    background: #1a1919;
+    padding: 1.2rem 1rem;
+}
+
+
+.mini-header {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.mini-description p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}

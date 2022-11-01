@@ -1,0 +1,29 @@
+.form-container{
+    display: flex;
+    height: 50px;
+    width: 300px;
+    border-left: 2px solid white;
+    border-bottom: 1px solid white;
+    color: #eaedf9 !important;
+    padding: 2rem;
+}
+
+
+.form-control{
+    color: #eaedf9 !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+}
+
+form input, form textarea{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    background-color: rgba(255,255,255, .1);
+    border-color: rgba(255,255,255, .3);
+    color: #eaedf9;
+}

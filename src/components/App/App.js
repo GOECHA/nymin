@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
-import Home from '../../routes/Home';
+import Home from '../../routes/Home/Home';
 import SelectedView from '../../routes/SelectedView';
 import { getAllData } from '../../utilities/utilities'
 import { ProgressSpinner } from '../SpinLogo/SpinLogo';
