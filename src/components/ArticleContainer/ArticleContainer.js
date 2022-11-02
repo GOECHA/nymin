@@ -94,6 +94,7 @@ const misc =  carouselArticles.filter((item, index) => {
 
   return (
     <div className='article-container'>
+        <div className='carousel-container'>
         <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -116,6 +117,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {us}
     </Swiper>
+    </div>
+    <div className='carousel-container'>
     <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -138,6 +141,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {world}
     </Swiper>
+    </div> 
+    <div className='carousel-container'>
     <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -160,6 +165,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {scienceTech}
     </Swiper>
+    </div> 
+    <div className='carousel-container'>
          <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -182,6 +189,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {arts}
     </Swiper>
+    </div> 
+    <div className='carousel-container'>
     <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -204,6 +213,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {dining}
     </Swiper>
+    </div> 
+    <div className='carousel-container'>
     <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -226,6 +237,8 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {sports}
     </Swiper>
+    </div> 
+    <div className='carousel-container'>
     <Swiper
      style={{
         "--swiper-navigation-color": "#fff",
@@ -248,6 +261,7 @@ const misc =  carouselArticles.filter((item, index) => {
      {/* {carouselArticles} */}
      {misc}
     </Swiper>
+    </div>
      
     </div>
   )
