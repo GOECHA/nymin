@@ -1,8 +1,8 @@
 
 
-const fetchAllData = (data) => {
+const getAllData = (data) => {
 
-        fetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${data}&api-key=
+      return fetch(`https://api.nytimes.com/svc/topstories/v2/${data}.json?api-key=
         Yaqc7SKeOgyp85ZXTGrTjNdGoKG85vjK`)
         .then((response) => {
             if (!response.ok) {
@@ -12,20 +12,14 @@ const fetchAllData = (data) => {
             }
             return response.json();
           })
-          .then((actualData) => console.log(actualData))
+          // .then((actualData) => console.log(actualData))
           .catch((err) => {
             console.log(err.message);
           });
 
 }
 
-const getAllData = (data) => {
-    const result = Promise.all([fetchAllData(data)])
-      .then(responses => {
-        return responses
-      })
-      return result;
-    };
+
    
   export { getAllData }
   

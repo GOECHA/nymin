@@ -9,46 +9,25 @@ import { ProgressSpinner } from '../SpinLogo/SpinLogo';
 
 
 function App() {
-const [articles, setArticles] = useState([])
-const [data, setData] = useState(null);
-const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
+// const [articles, setArticles] = useState([])
+const [data, setData] = useState([]);
+const [loading, setLoading] = useState(false);
+// const [error, setError] = useState(null);
 
 
 
 
 
 useEffect(() => {
-  getAllData(data)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(
-          `This is an HTTP error: The status is ${response.status}`
-        );
-      }
-      return response.json();
-    })
-    .then((actualData) => {
-      setData(actualData);
-      setError(null);
-    })
-    .catch((err) => {
-      setError(err.message);
-      setData(null);
-    })
-    .finally(() => {
-      setLoading(false);
-    });
+    setLoading(true);
+    getAllData('home').then(res => {
+    console.log(res.results)
+    setData(res.results)
+  })
+  setLoading(false);
 }, []);
 
-// console.log(`line44`,  getAllData(data))
-// console.log(`line45`,  data)
-
-
-const showArticles = (article)=>{
-  setArticles([...articles, article])
-  console.log(`article`, [article])
-}
+ 
 
 
 
@@ -56,7 +35,7 @@ const showArticles = (article)=>{
     <main className="app-container">
       {loading && <ProgressSpinner/>}
       <Routes>
-        <Route path="/" element={<Home articles={articles} showArticles={showArticles} /> }/>
+        <Route path="/" element={<Home data={data} /> }/>
         <Route path="/selected" element={<SelectedView/>} />
       </Routes>
     </main>
