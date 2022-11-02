@@ -1,8 +1,13 @@
 import React from 'react'
 
 const SelectedView = () => {
+
+
   return (
-    <div>SelectedView</div>
+    <div>
+     
+
+    </div>
   )
 }
 

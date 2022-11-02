@@ -1,13 +1,14 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './MiniArticle.css'
 
 
-const MiniArticle = ({title, img, date, description, section}) => {
+const MiniArticle = ({title, img, date, description, section, id, shortUrl}) => {
 
-  
 
 
   return (
+    <NavLink to={`/selected/${id}`} >
     <div className='mini-article'>
       <div className='mini-header-wrapper'>
         <h3 className='mini-header'>{title}</h3>
@@ -23,6 +24,7 @@ const MiniArticle = ({title, img, date, description, section}) => {
         <p className='mini-description'>{description}</p>
         </div>
     </div>
+    </NavLink>
   )
 }
 

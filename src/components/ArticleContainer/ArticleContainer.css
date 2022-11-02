@@ -6,6 +6,10 @@
 
 }
 
+.swiper{
+  margin:0%;
+}
+
 .my-swiper {
     height: auto;
     width: 100%;
@@ -57,7 +61,7 @@
     overflow: none;
      scroll-behavior: none; 
      position: static;
-     height: 300px;
+     height: 320px;
      margin: .5rem;
 
   }

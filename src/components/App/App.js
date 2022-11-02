@@ -5,7 +5,8 @@ import Home from '../../routes/Home/Home';
 import SelectedView from '../../routes/SelectedView';
 import { getAllData } from '../../utilities/utilities'
 import { ProgressSpinner } from '../SpinLogo/SpinLogo';
-
+import Status404 from '../../errorHandling/Status404';
+import InternalServerError from '../../errorHandling/InternalServerError';
 
 
 function App() {
@@ -17,11 +18,9 @@ const [loading, setLoading] = useState(false);
 
 
 
-
 useEffect(() => {
     setLoading(true);
     getAllData('home').then(res => {
-    console.log(res.results)
     setData(res.results)
   })
   setLoading(false);
@@ -29,14 +28,14 @@ useEffect(() => {
 
  
 
-
-
   return (
     <main className="app-container">
       {loading && <ProgressSpinner/>}
       <Routes>
+        <Route path="/selected/:id" render={ ({match}) => <SelectedView id={match.params.id} /> } />
         <Route path="/" element={<Home data={data} /> }/>
-        <Route path="/selected" element={<SelectedView/>} />
+        <Route component={Status404} />
+        <Route component={InternalServerError} />
       </Routes>
     </main>
   );

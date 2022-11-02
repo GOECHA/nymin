@@ -25,39 +25,34 @@ const ArticleContainer = ({ data }) => {
     const newImage = () => {
       return article.multimedia ? article.multimedia[0].url : image;
     };
-    // console.log(1234567, article)
     return (
       <MiniArticle
-        id={index}
+        id={article.short_url}
         section={article.section}
         img={newImage()}
         title={article.title}
         date={date}
         description={article.abstract}
         key={index}
+        shortUrl={article.short_url}
       />
     );
   });
   const carouselArticles = displayArticles.map((article, index) => {
-    // console.log(`555555`, article)
-    // return article
     return <SwiperSlide key={Math.random(13)}>{article}</SwiperSlide>;
   });
 
   const us = carouselArticles.filter((item, index) => {
-    // console.log(111, item.props.children.props.section)
     let usArticles = item.props.children.props.section.includes("us");
     return usArticles;
   });
 
   const world = carouselArticles.filter((item, index) => {
-    // console.log(111, item.props.children.props.section)
     let usArticles = item.props.children.props.section.includes("world");
     return usArticles;
   });
 
   const dining = carouselArticles.filter((item, index) => {
-    // console.log(111, item.props.children.props.section)
     return item.props.children.props.section.includes("science")
       ? item
       : item.props.children.props.section.includes("health")
@@ -80,6 +75,8 @@ const ArticleContainer = ({ data }) => {
   const misc = carouselArticles.filter((item, index) => {
     // console.log(111, item.props.children.props.section)
     return item.props.children.props.section.includes("well")
+      ? item
+      : item.props.children.props.section.includes("podcasts")
       ? item
       : item.props.children.props.section.includes("cross")
       ? item
