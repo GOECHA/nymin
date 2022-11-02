@@ -15,8 +15,6 @@
   }
   
   .parallax-bg{
-    text-align: center;
-    font-size: 15px;
     background: rgba(255, 255, 255, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;

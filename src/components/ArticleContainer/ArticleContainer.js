@@ -19,7 +19,7 @@ const displayArticles = data.map((article, index)=>{
    let date = article.published_date.slice(0, article.published_date.length-15)
 
     const newImage = () =>{return article.multimedia ? article.multimedia[0].url : image }
-    console.log(1234567, article)
+    // console.log(1234567, article)
     return <MiniArticle 
         id={index}
         section={article.section}
@@ -31,54 +31,55 @@ const displayArticles = data.map((article, index)=>{
         />
 })
 const carouselArticles = 
-    displayArticles.map((article) => {
-        console.log(`555555`, article)
+    displayArticles.map((article, index) => {
+        // console.log(`555555`, article)
         // return article
-   return <SwiperSlide key={article.id}>{article}</SwiperSlide>
+   return <SwiperSlide key={Math.random(13)}>{article}</SwiperSlide>
 })
 
 
 
 const us =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
+    // console.log(111, item.props.children.props.section)   
     let usArticles = item.props.children.props.section.includes('us')
     return usArticles
 })
 
 const world =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
+    // console.log(111, item.props.children.props.section)   
     let usArticles = item.props.children.props.section.includes('world')
     return usArticles
 })
 
-const scienceTech =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
+const scienceTech = carouselArticles.filter((item, index) => {
+    // console.log(111, item.props.children.props.section)   
     return item.props.children.props.section.includes('science') ? item : 
+           item.props.children.props.section.includes('health') ? item : 
            item.props.children.props.section.includes('technology') ? item : null
 })
 
 
 const arts =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
-    let usArticles = item.props.children.props.section.includes('arts')
-    return usArticles
+    // console.log(111, item.props.children.props.section)   
+    return  item.props.children.props.section.includes('arts') ? item :
+            item.props.children.props.section.includes('fashion') ? item : null
 })
 
 
 const dining =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
-    let usArticles = item.props.children.props.section.includes('dining')
-    return usArticles
+    // console.log(111, item.props.children.props.section)   
+    return item.props.children.props.section.includes('dining') ? item :
+           item.props.children.props.section.includes('food') ? item : null
 })
 
 const sports =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
+    // console.log(111, item.props.children.props.section)   
     let usArticles = item.props.children.props.section.includes('sports')
     return usArticles
 })
 
 const misc =  carouselArticles.filter((item, index) => {
-    console.log(111, item.props.children.props.section)   
+    // console.log(111, item.props.children.props.section)   
    return item.props.children.props.section.includes('well') ? item : 
           item.props.children.props.section.includes('cross') ? item :
           item.props.children.props.section.includes('obit') ? item :
