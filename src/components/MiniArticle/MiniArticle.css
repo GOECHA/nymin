@@ -1,20 +1,117 @@
+*{
+    text-decoration: none;
+}
+
 .mini-article{
     display: flex;
     flex-direction: column;
-    background: #1a1919;
-    padding: 1.2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 52, 135, 0.4);
+    padding: .5rem;
+    height: 310px;
+    width: 200px;
+    position: relative;
+    border-radius: .5rem;
+    overflow: hidden;
+    text-decoration: none;
+    border: none;
 }
 
+.mini-article:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+    box-shadow: 2px 5px 5px rgb(240, 248, 255, .3);
+}
+
+.section-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:90%;
+    height: 5%;
+    padding: .2rem;
+    margin: .4rem;
+}
+
+
+.section-container p{
+   font-size: 1.2rem;
+    
+}
+
+.date-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 5%;
+    background-color: rgb(240, 248, 255, .3);
+    border-radius: .1rem;
+    padding-left: .4rem;
+    margin: .2rem;
+}
+
+.mini-article p{
+    color: #fff;
+    margin: 0%;
+ }  
+
+ .img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+
+ }
+
+
+.mini-img{
+    max-height: 130px;
+    width: auto;
+    /* background-color: rgb(240, 248, 255, .5); */
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: .2rem;
+    z-index: -1;
+}
+
+.mini-img:active{
+    transform: scale(1.1); 
+    filter:invert();
+}
+
+.mini-header-wrapper{
+    display: flex;
+    height: 15%;
+}
 
 .mini-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: #fff;
-    padding: 1rem 0;
+    padding: .3rem 0;
+    margin: 0;
+    cursor: pointer;
 }
 
-
-.mini-description p,
-.mini-date p {
+.mini-description-wrapper{
+    max-width: 175px;
+    height: 20%;
+    margin: .5rem;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent);
+}
+.mini-description p
+ {
+    padding: .5rem;
     padding-bottom: 1rem;
     font-size: 1.1rem;
     text-align: justify;
+    margin: 0;
+}
+
+
+.mini-date p {
+    font-size: .3rem;
+    margin: 0%;
 }

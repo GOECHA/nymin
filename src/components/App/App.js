@@ -1,65 +1,57 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './App.css';
-import { Routes, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Home from '../../routes/Home/Home';
 import SelectedView from '../../routes/SelectedView';
 import { getAllData } from '../../utilities/utilities'
 import { ProgressSpinner } from '../SpinLogo/SpinLogo';
+import Status404 from '../../errorHandling/Status404';
+import InternalServerError from '../../errorHandling/InternalServerError';
+import AppContext from '../AppContext';
+
 
 
 
 function App() {
-const [articles, setArticles] = useState([])
-const [data, setData] = useState(null);
-const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
+const [article, setArticle] = useState('')
+const [data, setData] = useState([]);
+const [loading, setLoading] = useState(false);
+// const [error, setError] = useState(null);
+
+const globals = {
+  data: data,
+  setData: setData,
 
 
-
-
-
-useEffect(() => {
-  getAllData(data)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(
-          `This is an HTTP error: The status is ${response.status}`
-        );
-      }
-      return response.json();
-    })
-    .then((actualData) => {
-      setData(actualData);
-      setError(null);
-    })
-    .catch((err) => {
-      setError(err.message);
-      setData(null);
-    })
-    .finally(() => {
-      setLoading(false);
-    });
-}, []);
-
-// console.log(`line44`,  getAllData(data))
-// console.log(`line45`,  data)
-
-
-const showArticles = (article)=>{
-  setArticles([...articles, article])
-  console.log(`article`, [article])
+  article: article,
+  setArticle: setArticle,
 }
 
 
+useEffect(() => {
+    setLoading(true);
+    getAllData('home').then(res => {
+    globals.setData(res.results)
+  })
+  setLoading(false);
+}, []);
+
+console.log(`hello world`)
+ 
 
   return (
+    <AppContext.Provider value={globals}>
     <main className="app-container">
       {loading && <ProgressSpinner/>}
-      <Routes>
-        <Route path="/" element={<Home articles={articles} showArticles={showArticles} /> }/>
-        <Route path="/selected" element={<SelectedView/>} />
-      </Routes>
+      
+      <Switch>
+        <Route exact path="/selected/:id" render={ ({match}) => <SelectedView id={match.params.title} setData={setData}/> } />
+        <Route exact path="/" render={()=>(<Home data={data} /> ) }/>
+        <Route component={Status404} />
+        <Route component={InternalServerError} />
+      </Switch>
     </main>
+    </AppContext.Provider>
   );
 }
 

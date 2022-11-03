@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    }
+    
+    
+    .error-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+/*     
+    h1 {
+        display: flex;
+        color: rgb(249, 249, 245);
+        font-size: 60pt;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        margin-left: 30px;
+        width: 600px;
+    } */
+    
+    
+    /* h2 {
+        display: flex;
+        color: white;
+        font-size: 90pt;
+        margin-left: 150px;
+    }
+     */
+    
+    .logo{
+        display: flex;
+         height: 60%;
+         width: 60%;
+         margin-top: -300px;
+         margin-left: 300px;
+    }

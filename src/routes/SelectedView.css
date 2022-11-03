@@ -1,0 +1,134 @@
+/* *{
+    border: solid 1px purple;
+} */
+
+.selectedContainer{
+    display: flex;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+}
+
+.sel-header-wrapper{
+ height: 20%;
+ width: 100%;
+ padding: 0;
+ padding-left: 3.5rem;
+ color: white;
+ margin-top: 1rem;
+}
+
+.sel-header{
+    max-width: 600px;
+    padding: .3rem;
+}
+
+.sel-cent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.sel-img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 40%;
+    width: 100%;
+}
+
+
+.selected-image{
+    height: 500px;
+    width: auto;
+}
+
+.line{
+    margin-top: .5rem;
+    width: 300px; 
+    border-top: solid 1px white;
+}
+
+.sel-section-container{
+    width: 100%;
+    height: 10%;
+    padding: 0;
+    padding-left: 4rem;
+    color: white;
+   
+}
+
+.sel-section-container p{
+    font-size: 2rem;
+}
+
+.sel-date-wrapper{
+    color: white;
+    margin-top: .4rem;
+}
+
+.sel-description-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 200px;
+    background: rgba(0, 0, 0, .5 );
+    margin: 0%;
+}
+
+.sel-description{
+    color: white;
+    margin: .5rem;
+    max-width: 300px;
+    font-size: 2rem;
+}
+
+@media screen and ( max-width:640px){
+   
+    .sel-img-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        height: 40%;
+        width: 100%;
+       
+    }
+    .sel-cent-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    .selected-image{
+        height: 275px;
+        width: auto;
+        position: cover;
+    }
+
+    .sel-description-wrapper{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 20vh;
+        width: 80vw;
+        margin: 0;
+    }
+    
+    .sel-description{
+        color: white;
+        margin: 1rem;
+        margin-top: 0%;
+        font-size: 1rem;
+    }
+}

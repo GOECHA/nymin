@@ -6,12 +6,14 @@ import HeroImg from '../../components/HeroImg/HeroImg'
 import './Home.css'
 
 
-const Home = () => {
+const Home = ({data}) => {
+console.log(`home-triggered`)
+console.log(data)
   return (
     <div className="home-container">
         <Header />
         <HeroImg />
-        <ArticleContainer />
+        <ArticleContainer data={data} />
     </div>
   )
 }
