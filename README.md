@@ -1,71 +1,109 @@
-# Getting Started with Create React App
+# NY | Min
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
+> Deployed [_here_](https://nymin.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
+
+## Table of Contents
+* [General Info](#general-information)
+* [Contributors](#contributors)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
+
+
+## General Information
+
+A responsive, JavaScript App, built in React, that consumes data from the NYTimes API. 
+
+
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Contributors
+- [Chantal Goethals](https://github.com/goecha) | [LinkedIn](https://www.linkedin.com/in/chantalgoethalsgoecha/)
+
+## Technologies Used
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![Vercel](https://user-images.githubusercontent.com/101746747/188785090-4abee495-4f46-4dba-b554-e16ded576297.png)
+
+
+- React
+- React Hooks
+- ReactRouter V5
+- Swiper Carousel 
+- Cypress
+
+
+This project was bootstrapped with [Create App](https://github.com/facebook/create-react-app).
+
+
+
+## Features
+
+- Multi- page view with Swiper Carousel
+- Button Navigation to Reservation Page
+- Reserve a flight to a planet or one of it's moons! 
+- Delete Reservations
+- Navigation Back to home screen
+
+
+## Screenshots
+https://user-images.githubusercontent.com/102189342/192310408-d24ae41a-ca62-4ae1-81ef-8f74de2503ab.mp4
+
+
+https://user-images.githubusercontent.com/102189342/192313918-668404f5-5af1-4591-9b22-21e4969ccb3e.mp4
+
+
+<!-- If you have screenshots you'd like to share, include them here. -->
+<img width="400" alt="Screen Shot 2022-09-26 at 8 46 24 AM" src="https://user-images.githubusercontent.com/102189342/192307763-5037e811-d3b7-40c4-9218-1fe02cf0733a.png">
+
+
+
+
+
+## Setup
 In the project directory, you can run:
-
+npm i 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
+How does one go about using it?
+Provide various use cases and code examples here.
 
-### `npm run build`
+`write-your-code-here`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Status
+Project is: _in progress_ 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Room for Improvement
 
-### `npm run eject`
+Room for improvement:
+- More Testing
+- Multiple search 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To do:
+- Search for article by title
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Acknowledgements
+Give credit here.
+- This project was inspired by...
+- Many thanks to...
+### NYTimes API
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# nymin
