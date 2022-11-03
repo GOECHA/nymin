@@ -3,7 +3,7 @@
 const getAllData = (data) => {
 
       return fetch(`https://api.nytimes.com/svc/topstories/v2/${data}.json?api-key=
-        Yaqc7SKeOgyp85ZXTGrTjNdGoKG85vjK`)
+      ${process.env.REACT_APP_NYTIMES_API_KEY}`)
         .then((response) => {
             if (!response.ok) {
               throw new Error(
