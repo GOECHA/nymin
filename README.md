@@ -65,18 +65,17 @@ This project was bootstrapped with [Create App](https://github.com/facebook/crea
 
 
 ## Screenshots
-https://user-images.githubusercontent.com/102189342/192310408-d24ae41a-ca62-4ae1-81ef-8f74de2503ab.mp4
 
-
-https://user-images.githubusercontent.com/102189342/192313918-668404f5-5af1-4591-9b22-21e4969ccb3e.mp4
 
 
 <!-- If you have screenshots you'd like to share, include them here. -->
-<img width="400" alt="Screen Shot 2022-09-26 at 8 46 24 AM" src="https://user-images.githubusercontent.com/102189342/192307763-5037e811-d3b7-40c4-9218-1fe02cf0733a.png">
-
-
-
-
+<img width="700" alt="" src="https://user-images.githubusercontent.com/102189342/199817879-9f8f034b-cf48-4b5d-8e72-3f3de93498d2.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/102189342/199818145-2d5cbdcb-6dea-481d-a2e9-4cd626ec863f.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/102189342/199818240-a32aaa42-8c38-4fe0-a39e-bcc035cfeac1.png">
+<div>
+<img width="200" alt="Screen Shot 2022-11-03 at 1 40 25 PM" src="https://user-images.githubusercontent.com/102189342/199818559-ca4e25f3-c6c1-4c76-86b2-83c3d47266e2.png">|<img width="200" alt="Screen Shot 2022-11-03 at 1 40 34 PM" src="https://user-images.githubusercontent.com/102189342/199818557-1d1f82e8-5fe4-4788-949f-c3b7c691007d.png">|<img width="200" alt="Screen Shot 2022-11-03 at 1 40 08 PM" src="https://user-images.githubusercontent.com/102189342/199818566-38c39d7c-bf66-46d4-8c97-85db01153423.png">|<img width="200" alt="Screen Shot 2022-11-03 at 1 40 15 PM" src="https://user-images.githubusercontent.com/102189342/199818562-e47dbdcc-041b-4d22-bba4-e955de2dd85e.png">
+</div>
+<img width="485" alt="Screen Shot 2022-11-03 at 1 40 43 PM" src="https://user-images.githubusercontent.com/102189342/199818553-1a8157b6-e2f9-4c96-a33a-4f1300fd29d4.png">
 
 ## Setup
 In the project directory, you can run:
