@@ -10,8 +10,6 @@ import InternalServerError from '../../errorHandling/InternalServerError';
 import AppContext from '../AppContext';
 
 
-
-
 function App() {
 const [article, setArticle] = useState('')
 const [data, setData] = useState([]);
@@ -42,7 +40,7 @@ useEffect(() => {
   setLoading(false);
 }, []);
 
-console.log(`hello world`)
+
  
 
   return (
