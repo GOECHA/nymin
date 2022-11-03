@@ -1,0 +1,45 @@
+.hero-img2{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-img2::before{
+    content: "";
+    background: url("../../images/building2.png");
+    display: inline-block;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}   
+
+.heading-hero2{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img2 h1{
+    font-size: 2.4rem;
+}
+
+.hero-img2 p{
+    font-size: 1.4rem;
+    text-align: center;
+
+}
+
+@media screen and (max-width:640px) {
+    .hero-img2 h1{
+        font-size: 2rem;
+    }   
+}

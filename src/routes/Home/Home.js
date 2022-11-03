@@ -7,15 +7,13 @@ import './Home.css'
 
 
 const Home = ({data}) => {
-
-
-// console.log(data)
-
+console.log(`home-triggered`)
+console.log(data)
   return (
     <div className="home-container">
         <Header />
         <HeroImg />
-        <ArticleContainer data={data}/>
+        <ArticleContainer data={data} />
     </div>
   )
 }

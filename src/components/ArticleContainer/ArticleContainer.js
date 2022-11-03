@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import MiniArticle from "../MiniArticle/MiniArticle";
 // import random from '../../images/building2.png'
 import "./ArticleContainer.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Parallax, Navigation, Mousewheel, Keyboard } from "swiper";
+
 
 const ArticleContainer = ({ data }) => {
   console.log(data);
@@ -16,18 +17,18 @@ const ArticleContainer = ({ data }) => {
     />
   );
 
+
   const displayArticles = data.map((article, index) => {
-    let date = article.published_date.slice(
+    let date =[article.published_date.slice(
       0,
       article.published_date.length - 15
-    );
-
+    )]
     const newImage = () => {
       return article.multimedia ? article.multimedia[0].url : image;
     };
     return (
       <MiniArticle
-        id={article.short_url}
+        id={article.title}
         section={article.section}
         img={newImage()}
         title={article.title}
@@ -35,6 +36,7 @@ const ArticleContainer = ({ data }) => {
         description={article.abstract}
         key={index}
         shortUrl={article.short_url}
+        url={`/selected/${article.title}`}
       />
     );
   });

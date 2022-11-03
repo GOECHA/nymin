@@ -4,7 +4,7 @@ import './Status404.css';
 import logo from '../images/nymin-logo.png';
 
 
-const Status404= () => {
+const Status404 = () => {
     return (
       <Status code={404}>
         <div className='error-wrapper'>

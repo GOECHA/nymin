@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 2rem;
-
 }
 
 .swiper{
@@ -16,6 +16,13 @@
     margin-left: 5%;
     margin-right: 1%;
     border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .swiper-slide .swiper-slide-visible{
+    height: 390px;
+    position: fixed;
+    overflow: hidden;
   }
   
   .parallax-bg{
@@ -52,9 +59,10 @@
 
   .carousel-container{
     width: 90%;
-    height: 400px;
+    height: 390px;
     overflow: none;
     position: relative;
+    margin: 1rem;
   }
 
   .swiper-wrapper {

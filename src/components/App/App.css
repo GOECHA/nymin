@@ -1,4 +1,5 @@
-/* .app-container{
+.app-container{
   height: 100%;
-  background-color: black;
-} */
+  width: 100vw;
+  /* background-color: black; */
+}
