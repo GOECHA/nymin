@@ -2,7 +2,10 @@
     border: solid 1px purple;
 } */
 
-
+.linkToArt{
+    text-decoration: none;
+    color: white;
+}
 
 .selectedContainer{
     display: flex;

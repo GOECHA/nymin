@@ -15,8 +15,10 @@ const SelectedView = () => {
     <Header /> 
     <div className="selected-container">
       <div className="sel-header-wrapper">
-        <h1 className="sel-header">{globals.article.title}</h1>
-        <div className="line"></div>
+        <a className="linkToArt" target="blank" href={globals.article.short_url} >
+         <h1 className="sel-header">{globals.article.title}</h1>
+        </a>
+       <div className="line"></div>
       <div className="sel-date-wrapper">
         <p className="sel-date">{globals.article.published_date}</p>
       </div>
