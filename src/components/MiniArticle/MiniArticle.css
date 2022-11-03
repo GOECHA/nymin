@@ -5,12 +5,13 @@
 .mini-article{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: rgba(19, 52, 135, 0.4);
     padding: .5rem;
     height: 310px;
     width: 200px;
     position: relative;
-    /* margin: 1rem; */
     border-radius: .5rem;
     overflow: hidden;
     text-decoration: none;
@@ -24,22 +25,29 @@
 }
 
 .section-container {
-    width:30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:90%;
     height: 5%;
     padding: .2rem;
+    margin: .4rem;
 }
 
 
 .section-container p{
    font-size: 1.2rem;
+    
 }
 
 .date-wrapper{
+    display: flex;
+    justify-content: flex-start;
     width: 90%;
     height: 5%;
     background-color: rgb(240, 248, 255, .3);
-    border-radius: .3rem;
-    padding: .4rem;
+    border-radius: .1rem;
+    padding-left: .4rem;
     margin: .2rem;
 }
 
