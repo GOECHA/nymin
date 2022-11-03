@@ -17,7 +17,7 @@ const MiniArticle = ({
   const globals = useContext(AppContext)
 
   const handleClick = (e) => {
-    console.log(111, e.currentTarget.name)
+    // console.log(111, e.currentTarget.name)
     // console.log(111223, id)
     let art = globals.data.find(article =>{
       return article.title === e.currentTarget.name ? article : console.log(`boats n hoes`)
