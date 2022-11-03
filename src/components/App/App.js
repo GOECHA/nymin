@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import Home from '../../routes/Home/Home';
@@ -17,6 +17,12 @@ const [article, setArticle] = useState('')
 const [data, setData] = useState([]);
 const [loading, setLoading] = useState(false);
 // const [error, setError] = useState(null);
+const [search, setSearch] = useState([])
+
+
+
+
+
 
 const globals = {
   data: data,
@@ -25,6 +31,9 @@ const globals = {
 
   article: article,
   setArticle: setArticle,
+
+  search: search,
+  setSearch: setSearch,
 }
 
 
@@ -46,7 +55,7 @@ console.log(`hello world`)
       
       <Switch>
         <Route exact path="/selected/:id" render={ ({match}) => <SelectedView id={match.params.title} setData={setData}/> } />
-        <Route exact path="/" render={()=>(<Home data={data} /> ) }/>
+        <Route exact path="/" render={()=>(<Home data={data} setSearch={setSearch}/> ) }/>
         <Route component={Status404} />
         <Route component={InternalServerError} />
       </Switch>
