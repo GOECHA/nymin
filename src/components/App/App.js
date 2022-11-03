@@ -21,9 +21,6 @@ const [search, setSearch] = useState([])
 
 
 
-
-
-
 const globals = {
   data: data,
   setData: setData,
