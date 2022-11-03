@@ -1,6 +1,14 @@
-# NY | Min
+<div align="center" font="24">
+  
+ NY | Min
+  
+</div>
 
+<br>
+<div align="center" >
+<img width="100" src='https://user-images.githubusercontent.com/102189342/199812588-586ff7f2-de00-49a5-b0a2-ffeb57bb94b3.png' alt=''/><img width="100" src='https://user-images.githubusercontent.com/102189342/199812588-586ff7f2-de00-49a5-b0a2-ffeb57bb94b3.png' alt=''/><img width="100" src='https://user-images.githubusercontent.com/102189342/199812588-586ff7f2-de00-49a5-b0a2-ffeb57bb94b3.png' alt=''/>
 
+</div>
 
 > Deployed [_here_](https://nymin.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
