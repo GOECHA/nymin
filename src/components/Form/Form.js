@@ -1,37 +1,87 @@
-import React, {  useContext } from 'react'
+import React, {  useState, useContext } from 'react'
 import './Form.css'
 import AppContext from "../AppContext";
 
-const Form = () => {
 
+const Form = () => {
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+  const [searchInput, setSearchInput] = useState("");
+  const [q, setQ] = useState("")
   const globals = useContext(AppContext)
 
-  // const handleClick = (e) => {
-  //   // console.log(111, e.currentTarget.name)
-  //   // console.log(111223, id)
-  //   let art = globals.data.filter(article =>{
-  //     return article.title === e.currentTarget.name ? article : "No articles found"
-  //   })
-  //   globals.setASearch(art)
-  // // return( <Link to={`/selected/${id}`} />)
-  // }
-const searchArticles = (e) => {
-  e.preventDefault()
-  console.log(`globals.data)`,globals.data)
-  return globals.data.filter((article) =>  {
-   return article.title.toLowerCase().includes(article.title.toLowerCase()) ? article : "No articles found"
-  }
-  );
-};
+
+
+
+
+const handleChange = (e) => {
+  e.preventDefault();
+  setSearchInput(e.target.value);
+// };
+console.log(`globals.data.title`, globals.data)
+console.log(`earchInput`,searchInput)
+const articleData = globals.data.filter((article) => {
+  console.log(1234567, article.title)
+   return article
+     } )
+console.log(`articleData1`,articleData)
+return articleData.title > 0 ?  articleData
+ : console.log('not found')
+}
+// console.log(111122134235, handleChange())
+
+
 
   return (
     <div className='form-container'>
         <form>
-            <input type='text' className='form-control' placeholder='Search'></input>
-            <button className='btn' onClick={(e) => searchArticles(e)} >Search</button>
+            <input type='text' className='form-control' placeholder='Search by title . . .' onChange={handleChange}
+   value={searchInput}></input>
+            <button className='btn' onClick={(e) => handleChange(e)} >Search</button>
         </form>
     </div>
   )
 }
 
 export default Form
+
+// const Form = () => {
+//   const [error, setError] = useState(null);
+//   const [isLoaded, setIsLoaded] = useState(false);
+//   const [items, setItems] = useState([]);
+//   const [searchInput, setSearchInput] = useState("title","section");
+//   const [q, setQ] = useState("")
+//   const globals = useContext(AppContext)
+
+
+
+
+// const handleChange = (e) => {
+//   e.preventDefault();
+//   setSearchInput(e.target.value);
+// // };
+// console.log(`globals.data.title`, globals.data)
+// console.log(`earchInput`,searchInput)
+// return searchInput.length > 0 ?  
+// globals.data.filter((article) => {
+//   console.log(1234567, article)
+//     return article.title == (searchInput);
+// }) : console.log('not found')
+// }
+// // console.log(111122134235, handleChange())
+
+
+
+//   return (
+//     <div className='form-container'>
+//         <form>
+//             <input type='text' className='form-control' placeholder='Search by title . . .' onChange={handleChange}
+//    value={searchInput}></input>
+//             <button className='btn' onClick={(e) => handleChange(e)} >Search</button>
+//         </form>
+//     </div>
+//   )
+// }
+
+// export default Form

@@ -50,8 +50,11 @@ const ArticleContainer = ({ data }) => {
   });
 
   const world = carouselArticles.filter((item, index) => {
-    let usArticles = item.props.children.props.section.includes("world");
-    return usArticles;
+    return item.props.children.props.section.includes("world") 
+    ? item
+    : item.props.children.props.section.includes("climate")
+    ? item
+   : null;
   });
 
   const dining = carouselArticles.filter((item, index) => {
@@ -204,7 +207,7 @@ const ArticleContainer = ({ data }) => {
       </div>
       <div className="carousel-container">
         <div className="carousel-title-wrapper">
-          <h2 className="carousel-title">TECH, HEALTH, SPORTS, ARTS</h2>
+          <h2 className="carousel-title">TECH, HEALTH, SPORTS, ARTS, DINING</h2>
         </div>
         <Swiper
           style={{
