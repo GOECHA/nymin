@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import MiniArticle from "../MiniArticle/MiniArticle";
 // import random from '../../images/building2.png'
 import "./ArticleContainer.css";
