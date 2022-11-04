@@ -14,7 +14,6 @@ function App() {
 const [article, setArticle] = useState('')
 const [data, setData] = useState([]);
 const [loading, setLoading] = useState(false);
-// const [error, setError] = useState(null);
 const [search, setSearch] = useState([])
 
 

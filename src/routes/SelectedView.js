@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
 import AppContext from "../components/AppContext.js";
 import Header from "../components/Header/Header.js";
 import "./SelectedView.css";
