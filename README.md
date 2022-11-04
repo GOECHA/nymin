@@ -57,10 +57,9 @@ This project was bootstrapped with [Create App](https://github.com/facebook/crea
 
 ## Features
 
-- Multi- page view with Swiper Carousel
-- Button Navigation to Reservation Page
-- Reserve a flight to a planet or one of it's moons! 
-- Delete Reservations
+- Multi-page view with Swiper Carousel
+- Carousel Navigation to selected Article user story
+- View a selected article and re-direct to full article
 - Navigation Back to home screen
 
 
@@ -78,9 +77,14 @@ This project was bootstrapped with [Create App](https://github.com/facebook/crea
 <img width="485" alt="Screen Shot 2022-11-03 at 1 40 43 PM" src="https://user-images.githubusercontent.com/102189342/199818553-1a8157b6-e2f9-4c96-a33a-4f1300fd29d4.png">
 
 ## Setup
-In the project directory, you can run:
-npm i 
-### `npm start`
+
+To explore this application on your local machine...
+
+- Fork this repo (from the upper right hand corner of this screen)
+- Click the green Copy button on your fork, then copy the clone string in the pop-up box
+- In your terminal run git clone plus the string you just copied
+- Run command cd nymin to enter the repo
+- Run npm start to run the application
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
