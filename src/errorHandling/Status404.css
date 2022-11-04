@@ -6,33 +6,140 @@
     .error-wrapper{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        padding: 4rem;
+    }
+    
+
+
+    
+    .st404-title,
+    .st404title-2,
+    .st404title-3,
+    .st404title-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;  
+    }
+
+    .st404title-4{
+      width:100px;
+    }
+
+
+    .error-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(249, 249, 245);
+        font-size: 3rem;
+        margin-top: 20px;
+        /* margin-bottom: -20px; */
+        width:600px;
+        text-align: center;
+
     }
     
     
-/*     
-    h1 {
+    .error-wrapper h4 {
         display: flex;
-        color: rgb(249, 249, 245);
-        font-size: 60pt;
-        margin-top: 20px;
-        margin-bottom: -20px;
-        margin-left: 30px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
         width: 600px;
-    } */
+
+    }
     
+    .st404title-4 h5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white !important;
+        font-size: 1.5rem;
+        width:600px;
+        
+
+    }
     
-    /* h2 {
+
+    .link-404-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:  100%;    
+    }
+
+
+    .stat-4040-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         height: 50px;
+         width: auto;
+         cursor: pointer; 
+         margin-right: 0 !important;
+         position: relative;
+    }
+
+ @media screen and ( max-width:640px){
+   
+    .st404-title,
+    .st404title-2,
+    .st404title-3,
+    .st404title-4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 100%;  
+    }
+    .st404title-4{
+        width: 60%;
+        height: 80px;
+    }
+
+    .error-wrapper h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(249, 249, 245);
+        font-size: 2rem;
+        margin-top: 20px;
+        /* margin-bottom: -20px; */
+   } 
+    
+   
+    .error-wrapper h4 {
         display: flex;
         color: white;
-        font-size: 90pt;
-        margin-left: 150px;
+        font-size: 2rem;
     }
-     */
     
-    .logo{
+    .error-wrapper h5 {
         display: flex;
-         height: 60%;
-         width: 60%;
-         margin-top: -300px;
-         margin-left: 300px;
+        color: white;
+        font-size: 1rem;
+        width: 300px;
     }
+    
+    .st404title-4 .stat-4040-logo{
+        display: flex;
+         height: 30px;
+         width: auto;
+         cursor: pointer; 
+    }
+} 
+
+@media screen and ( max-width:1333px){
+    .st404title-4{
+        width: 60%;
+    }
+
+}
