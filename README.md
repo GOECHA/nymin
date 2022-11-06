@@ -10,6 +10,21 @@
 
 </div>
 
+- Large Screen
+<img width="400" src='https://user-images.githubusercontent.com/102189342/200185236-8147fe0a-1246-4017-a214-aed90dfe4cdf.gif' alt='nymin-lg'/>
+
+
+- Med Screen
+<img width="300" src='https://user-images.githubusercontent.com/102189342/200185240-edcbc422-8990-4123-bb89-0f58fea2c6ff.gif' alt='nymin-md'/>
+
+
+- Small Screen
+<img width="200" src='https://user-images.githubusercontent.com/102189342/200185241-7d75caaf-9af9-42e0-aa03-74abd2e6054e.gif' alt='nymin-sm'/>
+
+
+
+
+
 > Deployed [_here_](https://nymin.vercel.app/). <!-- If you have the project hosted somewhere, include the link here. -->
 
 ## Table of Contents
