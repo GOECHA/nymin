@@ -22,7 +22,6 @@ const globals = {
   data: data,
   setData: setData,
 
-
   article: article,
   setArticle: setArticle,
 
@@ -59,3 +58,8 @@ useEffect(() => {
 }
 
 export default App;
+
+
+
+
+
